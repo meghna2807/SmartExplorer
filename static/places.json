@@ -1,0 +1,191 @@
+[
+  {
+    "name": "The Big Chill",
+    "type": "Cafes",
+    "rating": "4.8 ★★★★☆",
+    "location": "Khan Market",
+    "address": "abc",
+    "phone": "9876543210",
+    "famous for":[],
+    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
+  },
+  {
+    "name": "Cafe Delhi Heights",
+    "type": "Cafes",
+    "rating": "4.3 ★★★★☆",
+    "location": "Khan Market",
+    "address": "def",
+    "phone": "9999999999",
+    "hours": ["Mon-Fri: 11 AM - 9 PM", "Sat-Sun: 12 PM - 10 PM"]
+  },
+  {
+    "name": "Daisy Mae - Cantina",
+    "type": "Cafes",
+    "rating": "3.9 ★★★★☆",
+    "location": "Khan Market",
+    "address": "def",
+    "phone": "9999999999",
+    "hours": ["Mon-Fri: 11 AM - 9 PM", "Sat-Sun: 12 PM - 10 PM"]
+  },
+  {
+    "name": "Yum Yum Cha",
+    "type": "Cafes",
+    "rating": "3.9 ★★★★☆",
+    "location": "Khan Market",
+    "address": "def",
+    "phone": "9999999999",
+    "hours": ["Mon-Fri: 11 AM - 9 PM", "Sat-Sun: 12 PM - 10 PM"]
+  },
+  {
+    "name": "Khan Chacha",
+    "type": "Street Food",
+    "rating": "3.9 ★★★★☆",
+    "location": "Khan Market",
+    "address": "def",
+    "phone": "9999999999",
+    "hours": ["Mon-Fri: 11 AM - 9 PM", "Sat-Sun: 12 PM - 10 PM"]
+  },
+  {
+    "name": "Azam's Mughlai",
+    "type": "Street Food",
+    "rating": "4.8 ★★★★☆",
+    "location": "Khan Market",
+    "address": "abc",
+    "phone": "9876543210",
+    "famous for":[],
+    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
+  },
+
+  {
+    "name": "AMA Cafe",
+    "type": "Cafes",
+    "rating": "4.8 ★★★★☆",
+    "location": "Majnu ka Teela",
+    "address": "abc",
+    "phone": "9876543210",
+    "famous for":[],
+    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
+  },
+  {
+    "name": "Kalsang",
+    "type": "Cafes",
+    "rating": "4.8 ★★★★☆",
+    "location": "Majnu ka Teela",
+    "address": "abc",
+    "phone": "9876543210",
+    "famous for":[],
+    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
+  },
+  {
+    "name": "Tee Dee",
+    "type": "Cafes",
+    "rating": "4.8 ★★★★☆",
+    "location": "Majnu ka Teela",
+    "address": "abc",
+    "phone": "9876543210",
+    "famous for":[],
+    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
+  },
+  {
+    "name": "KoKo",
+    "type": "Cafes",
+    "rating": "4.8 ★★★★☆",
+    "location": "Majnu ka Teela",
+    "address": "abc",
+    "phone": "9876543210",
+    "famous for":[],
+    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
+  },
+  {
+    "name": "Busan Korean Restaurant",
+    "type": "Cafes",
+    "rating": "4.8 ★★★★☆",
+    "location": "Majnu ka Teela",
+    "address": "abc",
+    "phone": "9876543210",
+    "famous for":[],
+    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
+  },
+  {
+    "name": "Uncle Wang's Momo",
+    "type": "Street Food",
+    "rating": "4.8 ★★★★☆",
+    "location": "Majnu ka Teela",
+    "address": "abc",
+    "phone": "9876543210",
+    "famous for":[],
+    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
+  },
+  {
+    "name": "Laphing Stalls",
+    "type": "Street Food",
+    "rating": "4.8 ★★★★☆",
+    "location": "Majnu ka Teela",
+    "address": "abc",
+    "phone": "9876543210",
+    "famous for":[],
+    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
+  },
+  {
+    "name": "Korean Corndog stalls",
+    "type": "Street Food",
+    "rating": "4.8 ★★★★☆",
+    "location": "Majnu ka Teela",
+    "address": "abc",
+    "phone": "9876543210",
+    "famous for":[],
+    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
+  },
+  {
+    "name": "Boba Tea Stalls",
+    "type": "Street Food",
+    "rating": "4.8 ★★★★☆",
+    "location": "Majnu ka Teela",
+    "address": "abc",
+    "phone": "9876543210",
+    "famous for":[],
+    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
+  },
+  {
+    "name": "Social",
+    "type": "Street Food",
+    "rating": "4.8 ★★★★☆",
+    "location": "Hauz Khas",
+    "address": "abc",
+    "phone": "9876543210",
+    "famous for":[],
+    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
+  },
+  {
+    "name": "Mia Bella",
+    "type": "Street Food",
+    "rating": "4.8 ★★★★☆",
+    "location": "Hauz Khas",
+    "address": "abc",
+    "phone": "9876543210",
+    "famous for":[],
+    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
+  },
+  {
+    "name": "Naivedyam",
+    "type": "Street Food",
+    "rating": "4.8 ★★★★☆",
+    "location": "Hauz Khas",
+    "address": "abc",
+    "phone": "9876543210",
+    "famous for":[],
+    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
+  },
+  {
+    "name": "Shi Cafe",
+    "type": "Street Food",
+    "rating": "4.8 ★★★★☆",
+    "location": "Hauz Khas",
+    "address": "abc",
+    "phone": "9876543210",
+    "famous for":[],
+    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
+  }
+
+
+]
