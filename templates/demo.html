@@ -136,7 +136,7 @@
             flex-direction: column;
         }
 
-        .place-card:hover{
+        .place-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
         }
@@ -263,48 +263,25 @@
         <div id="map"></div>
 
         <div id="result-list"></div>
-  </div>
+    </div>
 
-  <!-- POP-UP MODAL -->
-<div id="Place-box" class="box">
-    <div class="box-content">
-        <div class="model-header">
-            <h5 class="box-title" id="name">Place Details</h5>
-        </div>
-        <div class="box-info">
-            <p>Name: <span id="box-name"></span></p>
-            <p>Ratings: <span id="box-ratings"></span></p>
-            <p>Address: <span id="box-address"></span></p>
-            <p>Phone No.: <span id="box-phone"></span></p>
-            <p>Timings: <span id="box-timing"></span></p>
+    <div id="Place-box" class="box">
+        <div class="box-content">
+            <div class="box-header">
+                <h5 class="box-title" id="name">Place Details</h5>
+                <button class="open-btn" onclick="document.getElementById('Place-box').classList.add('show')">More Details</button>
+            </div>
+            <div class="box-info">
+                <p>Name: <span id="box-name"></span></p>
+                <p>Ratings: <span id="box-ratings"></span></p>
+                <p>Location: <span id="box-location"></span></p>
+                <p>Address: <span id="box-address"></span></p>
+                <p>Phone Num: <span id="box-phnum"></span></p>
+                <p>Timings: <span id="box-timing"></span></p>
+            </div>
         </div>
         <div class="box-footer">
-            <button class="box-close">Close</button>
-        </div>
-    </div>
-</div>
-
-  </div>
-</div>
-
-
-        <div id="Place-box" class="box">
-            <div class="box-content">
-                <div class="model-header">
-                    <h5 class="box-title" id="name">Place Details</h5>
-                    <button class="box-open" onclick="document.getElementById('Place-box').classList.add('show')">More Details</button>
-                </div>
-                <div class="box-info">
-                    <p>Name: <span id="box-name"></span></p>
-                    <p>Ratings: <span id="box-ratings"></span></p>
-                    <p>Address: <span id="box-address"></span></p>
-                    <p>Phone No.: <span id="box-phone"></span></p>
-                    <p>Timings: <span id="box-timing"></span></p>
-                </div>
-            </div>
-            <div class="box-footer">
-                <button class="box-close" onclick="document.getElementById('Place-box').classList.remove('show')">Close</button>
-            </div>
+                <button class="close-btn" onclick="document.getElementById('Place-box').classList.remove('show')">Close</button>
         </div>
     </div>
 
@@ -367,10 +344,28 @@
                     <div class="place-type"><span>${place.type}</span></div>
                     <div class="Famous-for">Famous for: ${place.FamousFor}</div>
                 </div>
+                <div class="open-btn">More Details</div>
+
+                const morebtn = card.querySelector(".open-btn");
+                morebtn.addEventListener("click", () => {
+                    const box = document.getElementById("place-box");
+                    document.getElementById("box-name").textContent = place.name;
+                    document.getElementById("box-ratings").textContent = place.rating;
+                    document.getElementById("box-location").textContent = place.location;
+                    document.getElementById("box-address").textContent = place.address || "N/A";
+                    document.getElementById("box-phnum").textContent = place.phone || "N/A";
+                    document.getElementById("box-timing").textContent = place.hours ? place.hours.join(", ") : "N/A";
+                    box.classList.add("show");
+                });
                 `;
 
                 resultList.appendChild(card);
             })
+
+            document.querySelector(".close-btn").addEventListener("click", () => {
+                    document.getElementById("Place-box").classList.remove("show");
+            });
+
         })
 
         
@@ -408,189 +403,3 @@
 
 
 
-<!-- <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>HackMap - 1st Year Opportunties</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-        <style>
-            :root{
-                --bg-primary: rgb(30,30, 47);
-                --bg-secondary: rgb(42,42,62);
-                --text-primary: rgb(224,224,224);
-                --text-secondary: rgb(163, 191, 250);
-                --accent: white;
-                --gradient: linear-gradient(90deg, rgb(44, 62, 80), rgb(142, 68, 173));
-                --card-bg: rgb(42, 42, 62);
-                --border: rgb(68, 68, 68);
-            }
-
-            body{
-                background-color: var(--bg-primary);
-                color: var(--text-primary);
-                font-family:'Segoe UI', sans-serif;
-                min-height:100vh;
-                margin: 0px;
-                transition: background-color 0.3s,color 0.3s;
-            }
-
-            header.hero{
-                background: var(--gradient);
-                text-align: center;
-                padding: 50px 20px;
-                width: 100%;
-                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-            }
-
-            .logo{
-                font-size: 3em;
-                font-weight: bold;
-                color: var(--accent);
-                margin: 0;
-                text-transform: uppercase;
-                letter-spacing: 3px;
-                text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-            }
-
-            .box {
-                text-align: center;
-            }
-
-            #greeting{
-                display: inline-block;
-                font-size: 1.5em;
-                color: rgb(255, 255, 255);
-                margin-top: 15px;
-                text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-                animation: typing 4s steps(21, end), blink 0.75s step-end infinite;
-                white-space: nowrap;
-                overflow: hidden;
-            }
-
-            @keyframes typing {
-                from { width: 0; }
-                to { width: 21ch; }
-            }
-
-            .icon i{
-                font-size:50px;
-                color: white;
-                animation:pulse 2s infinite;
-            }
-
-            @keyframes pulse {
-                0% {transform: scale(1); }
-                50% {transform: scale(1.1); }
-                100% {transform: scale(1); }
-            }
-
-            #opportunity-section{
-                max-width: 1200px;
-                margin: 0 40px;
-                padding: 0 20px;
-            }
-
-            #year-heading{
-                /* text-align: center;
-                background-color: rgb(81, 19, 97);
-                width: 300px;
-                height: 50px;
-                margin-bottom: 30px;
-                margin-top: 20px;
-                line-height: 50px; /* same as height */
-                display: inline-block;
-                text-align: center;
-                color: var(--accent);
-                font-size: 1.5em;
-                box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); */
-                display: inline-block;       /* keeps it like a button */
-    text-align: center;
-    background-color: rgb(81, 19, 97);
-    color: var(--accent, #fff);  /* fallback to white */
-    font-size: 1.5em;
-    font-weight: bold;
-    line-height: 50px;           /* vertical centering */
-    padding: 0 20px;             /* horizontal padding */
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-    border-radius: 8px;
-    white-space: nowrap;          /* prevent text wrap */
-    box-sizing: border-box;
-            }
-
-            /* #text-heading{
-                text-align: center;
-                color: var(--accent);
-                font-size: 1.5em;
-                
-                padding-bottom: 300px;
-                text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-            } */
-
-            .card-title{
-                text-align: center;
-            }
-
-            .card-row{
-                display: grid;
-                grid-template-columns: repeat(auto-fit ,minmax(250px,1fr));
-                margin-bottom: 20px;
-                gap: 20px;
-            }
-
-            .cb{
-                border: none;
-                width: 100%;
-                height: 50px;
-                border-radius: 10px;
-                background: linear-gradient(45deg, rgba(52, 152, 219, 1), rgba(142, 68, 173, 1));
-                font-weight: bold;
-                cursor: pointer;
-                font-size: 18px;
-                color: white;
-                transition: all 0.2s ease;
-                box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
-                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-            }
-
-            .cb:hover {
-               transform: translateY(-5px);
-               box-shadow: 0 8px 20px rgba(52, 152, 219, 0.6);
-               background: linear-gradient(45deg, #2980b9, #8e44ad);
-            }
-
-            @media (max-width: 600px) {
-              .logo { font-size: 2em; }
-              #greeting { font-size: 1em; }
-              .card-row { grid-template-columns: 1fr; }
-              .cb { padding: 15px; font-size: 16px; }
-             }
-
-        </style>
-    </head>
-    <body>
-        <header class="hero">
-            <h1 class="logo">HackMap</h1>
-            <div class="box">
-                <p id="greeting">1st Step to the Real World</p>
-            </div>
-            <div class="icon">
-                <i class="fas fa-graduation-cap" aria-label="graduation-cap"></i>
-            </div>
-        </header>
-
-        <div id="opportunity-section" class="card-section">
-            <button id="year-heading"><p id="text-heading">1st-Year Opportunties</p></button>
-            <div class="card-row">
-                <div class="card-title"><a href="Hackathon.html"><button class="cb">Hackathon</button></a></div>            
-                <div class="card-title"><a href="Internships.html"><button class="cb">Internships</button></a></div>
-                <div class="card-title"><a href="OSP.html"><button class="cb">Open Source Program</button></a></div>     
-            </div>
-            <div class="card-row">
-                <div class="card-title"><a href="1st-ResearchProg.html"><button class="cb">Research Program</button></a></div>
-            </div>
-        </div>
-    </body>
-</html> -->
