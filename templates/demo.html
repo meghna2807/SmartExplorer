@@ -125,20 +125,23 @@
         }
 
         .place-card {
-            background-color: rgb(255, 255, 255);
+            background-color: white;
             border-radius: 15px;
-            width: 320px;
             overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
             transition: all 0.3s ease;
+            border: 1px solid black;
+            max-width: 320px;
             cursor: pointer;
-            display: flex;
-            flex-direction: column;
+            /* display: flex;
+            flex-direction: column; */
+            margin: 0 auto;
         }
 
         .place-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+            border-color: rgb(26, 115, 232);
         }
 
         .card-header {
@@ -146,6 +149,17 @@
             overflow: hidden;
             position: relative;
             background: linear-gradient(90deg,rgb(79, 172, 254),rgb(0, 242, 254));
+        }
+
+        .card-header::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(125, 120, 120, 0.1);
+            pointer-events: none;
         }
 
         .card-header i {
@@ -173,22 +187,19 @@
         }
 
         .card-body {
-            flex-grow: 1;
             padding: 20px;
         }
 
         .place-name {
-            font-size: 2em;
+            font-size: 2rem;
             font-weight: 700;
-            margin-bottom: 6px;
+            margin-bottom: 8px;
             color: rgb(26, 115, 232);
         }
 
         .place-rating {
-            display: flex;
-            align-items: center;
-            gap: 4px;
-            margin-bottom: 8px;
+            font-weight: 600;
+            margin-bottom: 6px;
             font-size: 1rem;
             color: rgb(243, 156, 18);
         }
@@ -196,7 +207,7 @@
         .place-location {
             display: flex;
             align-items: center;
-            gap: 4px;
+            gap: 6px;
             margin-bottom: 10px;
             color: rgb(85, 85, 85);
             font-size: 1rem;
@@ -204,10 +215,11 @@
 
         .tag {
             font-size: 1rem;
+            font-weight: 600;
             background: rgb(227, 242, 253);
             color: rgb(26, 115, 232);
             display: inline-block;
-            padding: 4px 10px;
+            padding: 6px 12px;
             border-radius: 20px;
             margin-right: 20px;
             margin-bottom: 10px;
@@ -215,8 +227,9 @@
 
         .famous {
             font-size: 1rem;
-            margin-top: 8px;
+            margin-top: 12px;
             line-height: 1.4;
+            color: rgb(68, 68, 68);
         }
 
         .box {
@@ -241,6 +254,73 @@
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
         }
 
+        #place-box {
+            display: none;
+        }
+        #place-box.show {
+            display: block;
+        }
+
+        #place-box {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: auto;
+            width: 35%;
+            background-color: aliceblue;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            padding: 30px;
+            text-align: left;
+        }
+
+        #box-name {
+            font-size: 2em;
+            font-weight: 700;
+            color: rgba(26, 115, 232, 1);
+            display: block;
+            text-align: center;
+            margin-bottom: 20px;
+
+        }
+
+        .box-info p{
+            font-weight: 500;
+            margin-bottom: 10px;
+            color: rgba(51, 51, 51, 0.9);
+            line-height: 1.4;
+        }
+
+        .box-header {
+            background-color: rgb(26, 115, 232);
+            text-align: center;
+            padding: 12px 0;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            color: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .close-btn,.open-btn {
+            position: absolute;
+            top: 12px;
+            right: 15px;
+            background-color: rgba(26, 115, 232, 0.1);
+            color: rgba(26, 115, 232, 1);
+            border: none;
+            border-radius: 8px;
+            padding: 6px 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .close-btn:hover,.open-btn:hover {
+            background-color: rgba(26, 115, 232, 0.2);
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
@@ -265,11 +345,10 @@
         <div id="result-list"></div>
     </div>
 
-    <div id="Place-box" class="box">
+    <div id="place-box" class="box">
         <div class="box-content">
             <div class="box-header">
                 <h5 class="box-title" id="name">Place Details</h5>
-                <button class="open-btn" onclick="document.getElementById('Place-box').classList.add('show')">More Details</button>
             </div>
             <div class="box-info">
                 <p>Name: <span id="box-name"></span></p>
@@ -281,9 +360,11 @@
             </div>
         </div>
         <div class="box-footer">
-                <button class="close-btn" onclick="document.getElementById('Place-box').classList.remove('show')">Close</button>
+                <button class="close-btn" onclick="document.getElementById('place-box').classList.remove('show')">Close</button>
         </div>
     </div>
+
+    <button class="open-btn" onclick="document.getElementById('place-box').classList.add('show')">More Details</button>
 
     <script>
         const map = L.map('map').setView([28.6139, 77.2090], 12);
@@ -296,7 +377,7 @@
 
         document.querySelectorAll('.place-card').forEach(card => {
             card.addEventListener('click',()=>{
-                const box = document.getElementById('Place-box');
+                const box = document.getElementById('place-box');
                 const boxName = document.getElementById('box-name');
                 const boxRating = document.getElementById('box-ratings');
                 const boxAddress = document.getElementById('box-address');
@@ -345,6 +426,7 @@
                     <div class="Famous-for">Famous for: ${place.FamousFor}</div>
                 </div>
                 <div class="open-btn">More Details</div>
+                `;
 
                 const morebtn = card.querySelector(".open-btn");
                 morebtn.addEventListener("click", () => {
@@ -357,13 +439,13 @@
                     document.getElementById("box-timing").textContent = place.hours ? place.hours.join(", ") : "N/A";
                     box.classList.add("show");
                 });
-                `;
+                
 
                 resultList.appendChild(card);
             })
 
             document.querySelector(".close-btn").addEventListener("click", () => {
-                    document.getElementById("Place-box").classList.remove("show");
+                    document.getElementById("place-box").classList.remove("show");
             });
 
         })
