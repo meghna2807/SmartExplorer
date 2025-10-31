@@ -6,7 +6,9 @@
     "location": "Khan Market",
     "address": "abc",
     "phone": "9876543210",
-    "famous for":[],
+    "lat": 28.6005,
+    "lng": 77.2273,
+    "famous_for":[],
     "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
   },
   {
@@ -16,6 +18,8 @@
     "location": "Khan Market",
     "address": "def",
     "phone": "9999999999",
+    "lat": 28.6007,
+    "lng": 77.2278,
     "hours": ["Mon-Fri: 11 AM - 9 PM", "Sat-Sun: 12 PM - 10 PM"]
   },
   {
@@ -25,6 +29,8 @@
     "location": "Khan Market",
     "address": "def",
     "phone": "9999999999",
+    "lat": 28.6009,
+    "lng": 77.2282,
     "hours": ["Mon-Fri: 11 AM - 9 PM", "Sat-Sun: 12 PM - 10 PM"]
   },
   {
@@ -34,6 +40,8 @@
     "location": "Khan Market",
     "address": "def",
     "phone": "9999999999",
+    "lat": 28.6011,
+    "lng": 77.2287,
     "hours": ["Mon-Fri: 11 AM - 9 PM", "Sat-Sun: 12 PM - 10 PM"]
   },
   {
@@ -43,6 +51,8 @@
     "location": "Khan Market",
     "address": "def",
     "phone": "9999999999",
+    "lat": 28.6014,
+    "lng": 77.2291,
     "hours": ["Mon-Fri: 11 AM - 9 PM", "Sat-Sun: 12 PM - 10 PM"]
   },
   {
@@ -52,9 +62,24 @@
     "location": "Khan Market",
     "address": "abc",
     "phone": "9876543210",
+    "lat": 28.6017,
+    "lng": 77.2295,
     "famous for":[],
     "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
   },
+  {
+  "name": "The Paintball Co. Delhi",
+  "type": "Hangout",
+  "rating": "4.4",
+  "location": "Near Khan Market, Delhi",
+  "address": "5, Vinay Marg, Chanakyapuri, New Delhi, Delhi 110021",
+  "phone": "+91 98731 30303",
+  "hours": "10:00 AM - 8:00 PM",
+  "FamousFor": "Paintball, team games, and group hangouts",
+  "lat": 28.5975,
+  "lng": 77.2232
+  }, 
+
 
   {
     "name": "AMA Cafe",
