@@ -121,8 +121,8 @@
             border: 1px solid black;
             max-width: 320px;
             cursor: pointer;
-            /* display: flex;
-            flex-direction: column; */
+            display: flex;
+            flex-direction: column;
             margin: 0 auto;
         }
 
@@ -307,3 +307,46 @@
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
         } */
+
+       .place-card > .smart-trail-btn,
+       .place-card > .more-details-btn {
+            margin: 8px 12px;
+            padding: 10px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .place-card > .smart-trail-btn {
+            order: 1;
+            background: #f59e0b;
+            color: white;
+            margin-bottom: 4px;
+        }
+
+        .place-card > .more-details-btn {
+            order: 2;
+            background: #3b82f6;
+            color: white;
+        }
+
+        .place-card > .smart-trail-btn:hover,
+        .place-card > .smart-trail-btn:focus {
+            background: #d97706;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+        }
+
+        .place-card > .more-details-btn:hover,
+        .place-card > .more-details-btn:focus {
+            background: #2563eb;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
+
+        .place-card button:active {
+            transform: translateY(0);
+        }
