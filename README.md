@@ -8,7 +8,7 @@ SmartExplorer simplifies the search for cafes, street food, and activity spots a
 
 ## Tech Stack
 - **Languages:** Python, JavaScript
-- **Frameworks:** Flask, Leaflet.js
+- **Frameworks & Libraries:** Flask, Leaflet.js
 - **Frontend:** HTML, CSS
 - **Map Source:** OpenStreetMap 
 - **Tools:** Git, GitHub
