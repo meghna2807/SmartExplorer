@@ -21,7 +21,7 @@ SmartExplorer simplifies the search for cafes, street food, and activity spots a
 
 [Live Project Link]()
 
-## 🚀 Future Improvements
+## Future Improvements
 - Expand locations beyond Delhi to multiple cities and add filter based on city.
 - Add a submission form for users to suggest new spots. Valid entries are reviewed and integrated into the dataset.
 - Add user authentication for saved map experiences.
