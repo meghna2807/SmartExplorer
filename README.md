@@ -18,9 +18,6 @@ SmartExplorer simplifies the search for cafes, street food, and activity spots a
 - Interactive map displaying cafes, street food and activity spots.
 - Highlights connected routes between nearby places on the map.
 
-
-[Live Project Link]()
-
 ## Future Improvements
 - Expand locations beyond Delhi to multiple cities and add filter based on city.
 - Add a submission form for users to suggest new spots. Valid entries are reviewed and integrated into the dataset.
