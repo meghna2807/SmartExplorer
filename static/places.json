@@ -1,216 +1,197 @@
 [
   {
-    "name": "The Big Chill",
+    "name": "Coast Cafe",
     "type": "Cafes",
-    "rating": "4.8 ★★★★☆",
-    "location": "Khan Market",
-    "address": "abc",
-    "phone": "9876543210",
-    "lat": 28.6005,
-    "lng": 77.2273,
-    "famous_for":[],
-    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
-  },
-  {
-    "name": "Cafe Delhi Heights",
-    "type": "Cafes",
-    "rating": "4.3 ★★★★☆",
-    "location": "Khan Market",
-    "address": "def",
-    "phone": "9999999999",
-    "lat": 28.6007,
-    "lng": 77.2278,
-    "hours": ["Mon-Fri: 11 AM - 9 PM", "Sat-Sun: 12 PM - 10 PM"]
-  },
-  {
-    "name": "Daisy Mae - Cantina",
-    "type": "Cafes",
-    "rating": "3.9 ★★★★☆",
-    "location": "Khan Market",
-    "address": "def",
-    "phone": "9999999999",
-    "lat": 28.6009,
-    "lng": 77.2282,
-    "hours": ["Mon-Fri: 11 AM - 9 PM", "Sat-Sun: 12 PM - 10 PM"]
-  },
-  {
-    "name": "Yum Yum Cha",
-    "type": "Cafes",
-    "rating": "3.9 ★★★★☆",
-    "location": "Khan Market",
-    "address": "def",
-    "phone": "9999999999",
-    "lat": 28.6011,
-    "lng": 77.2287,
-    "hours": ["Mon-Fri: 11 AM - 9 PM", "Sat-Sun: 12 PM - 10 PM"]
-  },
-  {
-    "name": "Khan Chacha",
-    "type": "Street Food",
-    "rating": "3.9 ★★★★☆",
-    "location": "Khan Market",
-    "address": "def",
-    "phone": "9999999999",
-    "lat": 28.6014,
-    "lng": 77.2291,
-    "hours": ["Mon-Fri: 11 AM - 9 PM", "Sat-Sun: 12 PM - 10 PM"]
-  },
-  {
-    "name": "Azam's Mughlai",
-    "type": "Street Food",
-    "rating": "4.8 ★★★★☆",
-    "location": "Khan Market",
-    "address": "abc",
-    "phone": "9876543210",
-    "lat": 28.6017,
-    "lng": 77.2295,
-    "famous for":[],
-    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
-  },
-  {
-  "name": "The Paintball Co. Delhi",
-  "type": "Hangout",
-  "rating": "4.4",
-  "location": "Near Khan Market, Delhi",
-  "address": "5, Vinay Marg, Chanakyapuri, New Delhi, Delhi 110021",
-  "phone": "+91 98731 30303",
-  "hours": "10:00 AM - 8:00 PM",
-  "FamousFor": "Paintball, team games, and group hangouts",
-  "lat": 28.5975,
-  "lng": 77.2232
-  }, 
-
-
-  {
-    "name": "AMA Cafe",
-    "type": "Cafes",
-    "rating": "4.8 ★★★★☆",
-    "location": "Majnu ka Teela",
-    "address": "abc",
-    "phone": "9876543210",
-    "famous for":[],
-    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
-  },
-  {
-    "name": "Kalsang",
-    "type": "Cafes",
-    "rating": "4.8 ★★★★☆",
-    "location": "Majnu ka Teela",
-    "address": "abc",
-    "phone": "9876543210",
-    "famous for":[],
-    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
-  },
-  {
-    "name": "Tee Dee",
-    "type": "Cafes",
-    "rating": "4.8 ★★★★☆",
-    "location": "Majnu ka Teela",
-    "address": "abc",
-    "phone": "9876543210",
-    "famous for":[],
-    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
-  },
-  {
-    "name": "KoKo",
-    "type": "Cafes",
-    "rating": "4.8 ★★★★☆",
-    "location": "Majnu ka Teela",
-    "address": "abc",
-    "phone": "9876543210",
-    "famous for":[],
-    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
-  },
-  {
-    "name": "Busan Korean Restaurant",
-    "type": "Cafes",
-    "rating": "4.8 ★★★★☆",
-    "location": "Majnu ka Teela",
-    "address": "abc",
-    "phone": "9876543210",
-    "famous for":[],
-    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
-  },
-  {
-    "name": "Uncle Wang's Momo",
-    "type": "Street Food",
-    "rating": "4.8 ★★★★☆",
-    "location": "Majnu ka Teela",
-    "address": "abc",
-    "phone": "9876543210",
-    "famous for":[],
-    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
-  },
-  {
-    "name": "Laphing Stalls",
-    "type": "Street Food",
-    "rating": "4.8 ★★★★☆",
-    "location": "Majnu ka Teela",
-    "address": "abc",
-    "phone": "9876543210",
-    "famous for":[],
-    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
-  },
-  {
-    "name": "Korean Corndog stalls",
-    "type": "Street Food",
-    "rating": "4.8 ★★★★☆",
-    "location": "Majnu ka Teela",
-    "address": "abc",
-    "phone": "9876543210",
-    "famous for":[],
-    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
-  },
-  {
-    "name": "Boba Tea Stalls",
-    "type": "Street Food",
-    "rating": "4.8 ★★★★☆",
-    "location": "Majnu ka Teela",
-    "address": "abc",
-    "phone": "9876543210",
-    "famous for":[],
-    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
-  },
-  {
-    "name": "Social",
-    "type": "Street Food",
-    "rating": "4.8 ★★★★☆",
+    "rating": "4.7 ★",
     "location": "Hauz Khas",
-    "address": "abc",
-    "phone": "9876543210",
-    "famous for":[],
-    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
+    "address": "H-2, 2nd & 3rd Floor, Hauz Khas Village, New Delhi",
+    "phone": "1141757533",
+    "lat": 28.554995351713607, 
+    "lng": 77.19620301026781,
+    "hours": "12noon – 11pm"
   },
+
+  {
+    "name": "Kunzum Travel Cafe",
+    "type": "Cafes",
+    "rating": "4.4 ★",
+    "location": "Hauz Khas",
+    "address": "T-49, GF, Hauz Khas Village, New Delhi, Delhi 110016",
+    "phone": "08800200268",
+    "lat": 28.553796541807568, 
+    "lng": 77.19488328680944,
+    "hours": "11am - 7:30pm"
+  },
+ 
+  {
+    "name": "The Tea Room from Blossom Kochhar",
+    "type": "Cafes",
+    "rating": "3.8 ★",
+    "location": "Hauz Khas",
+    "address": "No 1, Hauz Khas Village, Deer Park, Hauz Khas, New Delhi, Delhi 110016",
+    "phone": "01140817655",
+    "lat": 28.555292404357978, 
+    "lng": 77.19509205397142,
+    "hours": "9am - 9pm"
+  },
+
   {
     "name": "Mia Bella",
-    "type": "Street Food",
-    "rating": "4.8 ★★★★☆",
+    "type": "Cafes",
+    "rating": "4.1 ★",
     "location": "Hauz Khas",
-    "address": "abc",
-    "phone": "9876543210",
-    "famous for":[],
-    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
+    "address": "50E 2nd Floor, Hauz Khas Fort Rd, Hauz Khas Village, Hauz Khas, New Delhi, Delhi 110016",
+    "phone": "08448201901",
+    "lat": 28.555227401166885, 
+    "lng": 77.19246002259881,
+    "hours": "11am - 1am"
   },
+
   {
-    "name": "Naivedyam",
-    "type": "Street Food",
-    "rating": "4.8 ★★★★☆",
+    "name": "Social",
+    "type": "Cafes",
+    "rating": "4.5 ★",
     "location": "Hauz Khas",
-    "address": "abc",
-    "phone": "9876543210",
-    "famous for":[],
-    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
+    "address": "Plot 9A & 12, Hauz Khas Tank, Hauz Khas Village, Deer Park, Hauz Khas, New Delhi, Delhi 110016",
+    "phone": "07838652814",
+    "lat": 28.554894623122102, 
+    "lng": 77.19429322212288,
+    "hours": "11am - 1am"
   },
+
   {
-    "name": "Shi Cafe",
-    "type": "Street Food",
-    "rating": "4.8 ★★★★☆",
+    "name": "Dear Park",
+    "type": "Hangout",
+    "rating": "N/A",
     "location": "Hauz Khas",
-    "address": "abc",
-    "phone": "9876543210",
-    "famous for":[],
-    "hours": ["Mon-Fri: 9 AM - 9 PM", "Sat-Sun: 10 AM - 10 PM"]
+    "address": "Hauz Khas Village, Deer Park, Hauz Khas, New Delhi, Delhi 110016",
+    "phone": "N/A",
+    "lat": 28.55750169960768, 
+    "lng": 77.19574402230606,
+    "hours": "5am - 8pm"
+  },
+
+  {
+    "name": "Hauz Khas Fort",
+    "type": "Hangout",
+    "rating": "N/A",
+    "location": "Hauz Khas",
+    "address": "H53V+7C6, Hauz Khas Fort Rd, Hauz Khas Village, Deer Park, Hauz Khas, New Delhi, Delhi 110016",
+    "phone": "N/A",
+    "lat": 28.553290746913557, 
+    "lng": 77.193538228691,
+    "hours": "10:30am - 7pm"
+  },
+
+  {
+    "name": "Saravana Bhavan",
+    "type": "Cafes",
+    "rating": "4.3 ★",
+    "location": "Connaught Place",
+    "address": "P-13/90, Connaught Cir, Block B, Connaught Place, New Delhi, Delhi 110001",
+    "phone": "01123347755",
+    "lat": 28.63251402813612, 
+    "lng": 77.21631307286957,
+    "hours": "8am - 11pm"
+  },
+
+  {
+    "name": "The Big Chill Cafe",
+    "type": "Cafes",
+    "rating": "4.5 ★",
+    "location": "Connaught Place",
+    "address": "B-40, Inner Cir, Block B, Connaught Place, New Delhi, Delhi 110001",
+    "phone": "01141757075",
+    "lat": 28.634479742019668, 
+    "lng": 77.21901503580197,
+    "hours": "12 - 11:15pm"
+  },
+
+  {
+    "name": "Cha Bar",
+    "type": "Cafes",
+    "rating": "3.6 ★",
+    "location": "Connaught Place",
+    "address": "N-81, Barakhamba Rd, Block N, Connaught Place, New Delhi, Delhi 110001",
+    "phone": "09910994865",
+    "lat": 28.631206480669224, 
+    "lng": 77.22220002600892,
+    "hours": "10am - 10pm"
+  },
+
+  {
+    "name": "Cafe Hawkers",
+    "type": "Cafes",
+    "rating": "4.1 ★",
+    "location": "Connaught Place",
+    "address": "L22, Block L, Connaught Place, New Delhi, Delhi 110001",
+    "phone": "08287723847",
+    "lat": 28.63488020773791, 
+    "lng": 77.22132272600905,
+    "hours": "11am - 11:30pm"
+  },
+
+  {
+    "name": "Bhogal Chole Bhature Wala",
+    "type": "Street-Food",
+    "rating": "N/A",
+    "location": "Connaught Place",
+    "address": "Scindia House, behind आनंद रेस्टोरेंट, Atul Grove Road, Janpath, Connaught Place, New Delhi, Delhi 110001",
+    "phone": "09911464400",
+    "lat": 28.629540639974458, 
+    "lng": 77.220290306966,
+    "hours": "9am - 4:30pm"
+  },
+
+  {
+    "name": "Depaul`s",
+    "type": "Street-Food",
+    "rating": "N/A",
+    "location": "Connaught Place",
+    "address": "22, Janpath Bhawan, Janpath Rd, New Delhi, Delhi 110001",
+    "phone": "01123328214",
+    "lat": 28.6288853442613, 
+    "lng": 77.2186328529946,
+    "hours": "10am - 8:30pm"
+  },
+
+  {
+    "name": "Chinky's Momo",
+    "type": "Street-Food",
+    "rating": "N/A",
+    "location": "Connaught Place",
+    "address": "FAMOUS BOOK STORE, Now We have shifted to Shop No -18 Indian Oil Building, Janpath, Connaught Place, New Delhi, Delhi 110001",
+    "phone": "09599712951",
+    "lat": 28.629364057627505, 
+    "lng": 77.21793330087321,
+    "hours": "10am - 9pm"
+  },
+
+  {
+    "name": "The Hidden Hour - Mystery Escape Room",
+    "type": "Hangout",
+    "rating": "N/A",
+    "location": "Connaught Place",
+    "address": "Radisson Blu Marina Hotel, CONNAUGHT PLACE, G-22, Ground Floor, Outer Circle Marina Arcade, near Bank of Baroda, New Delhi, Delhi 110001",
+    "phone": "07399100500",
+    "lat": 28.629364057627505, 
+    "lng": 77.21793330087321,
+    "hours": "10:30am - 9:30pm"
+  },
+
+  {
+    "name": "Agrasen Ki Baoli",
+    "type": "Hangout",
+    "rating": "N/A",
+    "location": "Connaught Place",
+    "address": "Hailey Rd, Hamdard Nagar, Vakil Lane, Mandi House, New Delhi, Delhi 110001",
+    "phone": "N/A",
+    "lat": 28.626222071322815, 
+    "lng": 77.22503689532297,
+    "hours": "9am - 5:30pm"
   }
-
-
+  
 ]
+
+
+
